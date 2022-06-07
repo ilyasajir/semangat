@@ -1,16 +1,16 @@
 let nama, val;
 const url_string = document.URL;
 const url = new URL(url_string);
-let credit;
+let doi;
 
 if (url.searchParams.get('in') != null) {
-  credit = url.searchParams.get('in');
+  doi = url.searchParams.get('in');
 } else {
-  credit = "Ilyasa";
+  doi = "Filzah";
 }
 
 let footer = document.getElementById("credit");
-footer.innerHTML = credit;
+footer.innerHTML = doi;
 footer.href = "https://www.instagram.com/_ilyasin_/";
 
 function time() {
